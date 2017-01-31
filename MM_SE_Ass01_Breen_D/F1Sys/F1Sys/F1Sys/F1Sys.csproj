@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BF17C59-ACAC-46F4-8322-845DACFE57C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>F1Sys</RootNamespace>
+    <AssemblyName>F1Sys</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEditDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditDriver.Designer.cs">
+      <DependentUpon>frmEditDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditRace.Designer.cs">
+      <DependentUpon>frmEditRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditTeam.Designer.cs">
+      <DependentUpon>frmEditTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListDrivers.Designer.cs">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaceRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaceRegistration.Designer.cs">
+      <DependentUpon>frmRaceRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordRaceTimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordRaceTimes.Designer.cs">
+      <DependentUpon>frmRecordRaceTimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegDriver.Designer.cs">
+      <DependentUpon>frmRegDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegTeam.Designer.cs">
+      <DependentUpon>frmRegTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveDriver.Designer.cs">
+      <DependentUpon>frmRemoveDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveTeam.Designer.cs">
+      <DependentUpon>frmRemoveTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScheduleRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScheduleRace.Designer.cs">
+      <DependentUpon>frmScheduleRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeasonStandings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeasonStandings.Designer.cs">
+      <DependentUpon>frmSeasonStandings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowRaceResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowRaceResults.Designer.cs">
+      <DependentUpon>frmShowRaceResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEditDriver.resx">
+      <DependentUpon>frmEditDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditRace.resx">
+      <DependentUpon>frmEditRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditTeam.resx">
+      <DependentUpon>frmEditTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListDrivers.resx">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaceRegistration.resx">
+      <DependentUpon>frmRaceRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordRaceTimes.resx">
+      <DependentUpon>frmRecordRaceTimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegDriver.resx">
+      <DependentUpon>frmRegDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegTeam.resx">
+      <DependentUpon>frmRegTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveDriver.resx">
+      <DependentUpon>frmRemoveDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveTeam.resx">
+      <DependentUpon>frmRemoveTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScheduleRace.resx">
+      <DependentUpon>frmScheduleRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeasonStandings.resx">
+      <DependentUpon>frmSeasonStandings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowRaceResults.resx">
+      <DependentUpon>frmShowRaceResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
